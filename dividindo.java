@@ -6,7 +6,9 @@ Scanner sc = new Scanner(System.in);
  
   
   
-
+ boolean resp=true;
+  
+  do{
 System.out.println("MMMMMMK00KKKKKXKKKKKKKKNKKKKMMMMMM");
 System.out.println("MMMMMW;:ccccccccccccccclcclcMMMMMM");
 System.out.println("MMMMMK;cccllllllllllllc:llc:WMMMMM");
@@ -37,17 +39,34 @@ System.out.println("MMMMMx......................NMMMMM");
 System.out.println("MMMMM0......................WMMMMM");
 System.out.println("MMMMMM0kkxxxxxdddddddddKddddMMMMMM");  
   
+ 
   int count=0; 
-  int m=sc.nextInt(); 
-  int n=sc.nextInt();
+  int m=0;
+  int n=0;
+  
+  
+  
+  m=sc.nextInt();
+  System.out.print("dividido por: ");
+  n=sc.nextInt();
  
  
-//inicio 
+  
 while(m>0){ 
 m-=n; 
 count++; 
 }
-  System.out.println("seu resultado foi="+count);
+   
+  System.out.println("seu resultado foi="+count+"\n");
+  System.out.println("deseja continuar?(s)im/(n)ao");
+  resp=(sc.next().charAt(0)=='y')?true:false;
+  
+  
+} 
+  while(resp);
 
-
-}}//main function and class
+  
+  
+  
+  
+}}//fim main e class
