@@ -5,10 +5,6 @@ public static void main(String args[]){
 Scanner sc = new Scanner(System.in);
  
   
-  
- boolean resp=true;
-  
-  do{
 System.out.println("MMMMMMK00KKKKKXKKKKKKKKNKKKKMMMMMM");
 System.out.println("MMMMMW;:ccccccccccccccclcclcMMMMMM");
 System.out.println("MMMMMK;cccllllllllllllc:llc:WMMMMM");
@@ -57,14 +53,9 @@ m-=n;
 count++; 
 }
    
-  System.out.println("seu resultado foi="+count+"\n");
-  System.out.println("deseja continuar?(s)im/(n)ao");
-  resp=(sc.next().charAt(0)=='y')?true:false;
+  System.out.println("seu resultado eh "+count+"\n");
   
   
-} 
-  while(resp);
-
   
   
   
